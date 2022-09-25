@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  color: #4b2a17;
+  font-weight: bold;
+  font-family: 'Istok Web', sans-serif;
+  line-height: 1.4;
+}
+
+.column-container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  min-width: 650px;
+  background-image: url('pattern.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.column {
+  margin: 10px;
+  margin-top: 0px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  height: calc(100vh - 40px);
+}
+.container.left {
+  margin-top: 25px;
+  margin-left: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.column-header {
+  font-size: 18px;
+  position: relative;
+  top: 8px;
+  background-image: url('pattern.jpg');
+  background-position: center;
+  border-radius: 10px;
+  border: 3px solid #754f5b;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 3px;
+}
+
+#big_coffee {
+  user-select: none;
+  cursor: pointer;
+}
+
+#big_coffee img {
+  width: 150px;
+  padding-top: 5px;
+}
+
+.counter-container {
+  font-size: 30px;
+  margin: 10px;
+}
+
+.cps-container {
+  font-size: 20px;
+}
+
+#producer_container {
+  padding: 10px;
+  overflow: auto;
+  border: 3px solid #754f5b;
+  border-radius: 5px;
+}
+
+#producer_container::-webkit-scrollbar {
+  width: 12px;
+}
+
+#producer_container::-webkit-scrollbar-track {
+  background: #f5ebe0;
+}
+
+#producer_container::-webkit-scrollbar-thumb {
+  background: #b6a592;
+  border-radius: 20px;
+  border: 3px solid #f5ebe0;
+}
+
+.producer {
+  margin-bottom: 5px;
+  padding: 10px;
+  border: 2px solid #c1abb2;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #decbb7;
+  font-weight: normal;
+  color: #4b2a17;
+}
+
+.producer-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.producer-title {
+  font-size: 15px;
+}
+
+.producer-column .desc {
+  font-size: 12px;
+}
+
+.producer button {
+  font-size: 13px;
+  width: 50px;
+  background-color: #f5ebe0;
+  border: 1px solid #c1abb2;
+  border-radius: 6px;
+  color: #f4acb7;
+  cursor: pointer;
+  padding-bottom: 2px;
+}
+
+.producer button:active {
+  background-color: #fbf7f2;
+  color: #db7196;
+}
