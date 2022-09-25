@@ -62,8 +62,13 @@ body {
 }
 
 #big_coffee img {
-  width: 150px;
+  width: 200px;
   padding-top: 5px;
+}
+
+#big_coffee img:active {
+  /* Scale the coffee image to 0.95 of its original size */
+  transform: scale(0.95);
 }
 
 .counter-container {
@@ -82,6 +87,7 @@ body {
   border-radius: 5px;
 }
 
+/* style the scrollbar on the producer container to match theme of page */
 #producer_container::-webkit-scrollbar {
   width: 12px;
 }
