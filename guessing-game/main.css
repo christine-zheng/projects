@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgb(85, 105, 85);
+}
+
+h1 {
+    font-size: 35px;
+}
+
+p {
+    font-size: 20px;
+    padding-top: 15px;
+}
+
+#game-bg {
+    background-color: rgb(250, 225, 230);
+    margin: auto;
+    margin-top: 60px;
+    width: 85%;
+    text-align: center;
+    padding: 50px 25px;
+    border-radius: 15px;
+}
+
+p#numGuesses {
+    font-size: 15px;
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+
+/* style for all buttons */
+.button {
+    background-color: rgb(122, 163, 123);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.button:hover {
+    background-color: rgb(105, 133, 105);
+    transition: 0.5s;
+}
+
+input:focus {
+    outline-color: rgb(108, 136, 108);
+}
+
+/* reset-btn */
+#reset-btn {
+    margin-right: 20px;
+    margin-bottom: 24px;
+}
+
+
+/* user input and submit button */
+div#user-input {
+    margin: auto;
+    width: 100%;
+}
+
+/* disable the default up-down arrows for Number input */
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input#guess {
+    border: 2px solid rgb(122, 163, 123);
+    border-radius: 5px;
+    color: rgb(85, 105, 85);
+    font-size: 15px;
+    height: 75px;
+    width: 120px;
+    margin-left: 60px;
+    margin-top: 8px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+input#submit-btn {
+    position: relative;
+    top: 38px;
+    left: -40px;
+}
+
+
+/* styles the list for guesses (ul & li) */
+#guess-list {
+    margin: auto;
+    width: 100%;
+}
+
+ul {
+    display: inline-block;
+    list-style-type: none; 
+    padding: 0;
+    margin-top: 8px;
+}
+
+li {
+    float: left;
+    background-color: rgb(255, 253, 251);
+    border: 2px solid rgb(122, 163, 123);
+    border-radius: 5px;
+    line-height: 37px;
+    margin: 7px;
+    width: 35px;
+    height: 35px;
+}
